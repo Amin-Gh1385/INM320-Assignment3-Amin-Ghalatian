@@ -2,11 +2,11 @@
   "name": "public",
   "version": "1.0.0",
   "main": "index.js",
- "scripts": {
-  "sass": "sass --watch scss/style.scss:assets/css/style.css",
-  "server": "lite-server",
-  "dev": "concurrently \"npm run sass\" \"npm run server\""
-},
+  "scripts": {
+    "startserver": "lite-server --baseDir=\".\"",
+    "server": "sass --watch scss:assets/css",
+    "start": "concurrently \"npm run startserver\" \"npm run server\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
