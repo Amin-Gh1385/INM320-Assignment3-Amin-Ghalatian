@@ -1,0 +1,19 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "sass": "sass --watch scss/style.scss:assets/css/style.css",
+  "server": "lite-server",
+  "dev": "concurrently \"npm run sass\" \"npm run server\""
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.97.3"
+  }
+}
